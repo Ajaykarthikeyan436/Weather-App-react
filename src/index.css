@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus{
+    outline: none;
+}
+
+#app_container{
+    background-image: url(./assets/pexels-brett-sayles-912364.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+}
+
+#landing_container{
+    background-image: url(./assets/pexels-brett-sayles-912364.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+}
+
+#box div{
+    background-color:rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
