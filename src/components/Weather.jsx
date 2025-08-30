@@ -1,21 +1,16 @@
 import { FaCloudSun } from "react-icons/fa"
 import { FiWind } from "react-icons/fi";
 import { FaTemperatureHigh } from "react-icons/fa";
+import { useContext } from "react";
+import { WeatherContext } from "../Context Folder/WeatherContext";
 
 
-function Weather(props) {
+const Weather = () => {
 
-    const city = props.city
-    
-    const cloud = props.cloud
-    
-    const wind = props.wind
-    
-    const temp = props.temp
-    
+    const { city, cloud, wind, temp } = useContext(WeatherContext)
 
     return (
-        <div className="p-10 flex justify-between align-top" id="app_container">
+        <div className="p-10 flex justify-between align-top bg-gradient-to-br from-[#00feba] to-[#5b548a] h-screen w-full">
             <div className="flex flex-col gap-4">
                 <div className="flex flex-col">
                     <h1 className="text-3xl font-medium">{city}</h1>
